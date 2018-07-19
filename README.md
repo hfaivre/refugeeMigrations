@@ -3,6 +3,10 @@
 
 This project is a simple interactive D3 dashboard using Refugee Migration data from the [the World Bank Data](https://data.worldbank.org/).
 
+## Live Demo
+
+For a live demo of this dashboard, visit the heroku hosted version [here](https://glacial-sands-88000.herokuapp.com/)
+
 
 ## Functionnality
 
