@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Inconsolata|Rubik" rel="stylesheet">
+  <title>D3 - Refugee Migration Vizualisations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="nav">
+    <h2>Refugee Migrations by Year since 1996</h2>
+    <p>
+      Explore Refugee migrations by country of origin and country of Asylum over the past twenty years. <br>
+      Number of refugees by country of :  <span id="origin-asylum-val"></span>
+      <select name="" id="">
+        <option value="refugeeByCountryOfAsylum">Asylum</option>
+        <option value="refugeeByCountryOfOrigin">Origin</option>
+      </select>
+      <br>Current year: <span id="year-val"></span>
+      <input id="year" type="range" step="1">
+    </p>
+    <p>Click on a country to see its trends by year.</p>
+  </div>
+  <section class="container">
+    <div class="chart-container">
+    <svg 
+      version="1.1"
+      baseProfile="full"
+      xmlns="http://www.w3.org/2000/svg" 
+      id="mapArea">
+    </svg>
+  </div>
+  <div class="chart-container right">
+    <svg 
+      version="1.1"
+      baseProfile="full"
+      xmlns="http://www.w3.org/2000/svg" 
+      id="pie">
+    </svg>
+    <svg 
+      version="1.1"
+      baseProfile="full"
+      xmlns="http://www.w3.org/2000/svg" 
+      id="bar">
+    </svg>
+  </div>
+  </section>
+  <div class="tooltip"></div>
+  <svg 
+    version="1.1"
+    baseProfile="full"
+    xmlns="http://www.w3.org/2000/svg">
+  </svg>
+
+  <div class="tooltip"></div>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <script src="app.js"></script>
+  <script src="tooltips.js"></script>
+  <script src="dataExtractor.js"></script>
+  <script src="map.js"></script>
+  <script src="pie.js"></script>
+  <script src="bar.js"></script>
+
+
+</body>
+</html>
